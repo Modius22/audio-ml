@@ -1,0 +1,22 @@
+{
+    "name": "audio-ml",
+
+    "context": "..",
+
+    "build":{
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.defaultInterpreterPath":"/usr/local/bin/python"
+    },
+    "extensions": ["ms-python.python"],
+    "forwardPorts": [8080],
+    "mounts": ["source=C:/Users/Modius/Documents/development/audio-ml/src,target=/mnt/host/source/mobot,type=bind",
+               "source=C:/Users/Modius/Documents/development/audio-ml/data,target=/mnt/host/data,type=bind"],
+    "containerEnv": {
+        "SOURCE_PATH":"/mnt/host/source",
+        "DATA_PATH": "/mnt/host/data",
+        "PYTHONPATH": "/mnt/host/source"
+    }
+}
