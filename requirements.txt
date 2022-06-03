@@ -7,3 +7,4 @@ sklearn
 flake8==4.0.1
 notebook==6.4.11
 imblearn
+xgboost==1.6.1
