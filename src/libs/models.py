@@ -9,7 +9,7 @@ from libs import utils
 
 # Step 1. Define an objective function to be maximized.
 def objective(trial, models, smote):
-    X, y = utils.get_trainings_data(smote=smote)
+    X, y = utils.get_dataset(notebook=True, smote=smote)
 
     # classifier_name = trial.suggest_categorical("classifier", ["LogReg","DeTree", "RandomForest"])
     classifier_name = trial.suggest_categorical("classifier", models)
