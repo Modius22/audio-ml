@@ -10,4 +10,4 @@ imblearn
 xgboost==1.6.1
 optuna==2.10.0
 ipywidgets==7.7.0
-lightning-flash==0.7.5
+lightning-flash==0.7.0
