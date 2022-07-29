@@ -133,4 +133,6 @@ gcloud-key*.json
 test.py
 
 # Local data
-data/*
+*data/*
+.DS_Store
+src/lightning_logs/*
