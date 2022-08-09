@@ -136,4 +136,4 @@ test.py
 *data/*
 .DS_Store
 src/lightning_logs/*
-.devcontainer.json
+*.devcontainer.json*
